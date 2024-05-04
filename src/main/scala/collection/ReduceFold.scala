@@ -1,5 +1,16 @@
 package collection
 
+/*
+ * You cannot use reduce on an empty collection. You will get an exception if you do,
+ * so make sure your collection is not empty before you pass it to reduce.
+ * Scala provides an alternative, reduceOption, that does not throw an exception,
+ * but represents the result as an Option.
+ */
+/*
+ * fold takes a binary operation just as reduce does, but it also takes a starting value
+ * in addition to the collection. That is how fold can handle empty collections.
+ * If the collection is empty, you’re just left with the starting value.
+ */
 object ReduceFold extends App {
   val a = Array(12, 6, 15, 2)
   // 12 + 6 = 18 + 15 = 33 + 2 = 35
