@@ -1,6 +1,9 @@
-package play_ground.collections
+package collection
 
-object ZipWithIndex extends App {
+/*
+ * 
+ */
+object ZipUnzip extends App {
   val days = Vector("Sun", "Mon", "Tue", "Wed", "Thus", "Fri", "Sat")
 
   // Vector((Sun,0), (Mon,1), (Tue,2), (Wed,3), (Thus,4), (Fri,5), (Sat,6))
@@ -21,4 +24,9 @@ object ZipWithIndex extends App {
 
   //Vector((Sun,10), (Mon,20), (Tue,30), (Wed,40), (Thus,50), (Fri,60), (Sat,70))
   val daysWithZip = days.zip(LazyList.from(10, 10))
+
+  val unZipDays: (Vector[String], Vector[Int]) = daysWithZip.unzip
+  val (day, index) = unZipDays
+  println(day)
+  println(index)
 }
