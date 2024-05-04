@@ -43,8 +43,17 @@ object sorted extends App {
   )
 
   // sort according to lastName and then first name by length desc
-  println(names.sortWith((name1, name2) => 
+  println(names.sortWith((name1, name2) =>
     if(name1.last == name2.last) name1.first.length > name2.first.length
     else name1.last < name2.last
   ))
+
+  // other function uses with sortWith is >, <, >= , <=
+  /*
+   * function inside sort with takes two params and return boolean(true/false)
+   * (obj1, obj2) => boolean
+   * return true => if you want obj1 before obj2
+   * return false => if you want other
+   */
+
 }
