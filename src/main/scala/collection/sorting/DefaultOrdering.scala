@@ -13,7 +13,7 @@ case class Employee(id: Int, sal: Long) extends Ordered[Employee] {
     this.sal compare that.sal
   }
 }
-object ErrorWithEmp extends App {
+object DefaultOrdering extends App {
   val e1 = Employee(1, 1000)
   val e2 = Employee(3, 3000)
   val e3 = Employee(2, 2000)
