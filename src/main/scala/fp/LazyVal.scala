@@ -1,4 +1,4 @@
-package play_ground
+package fp
 
 object LazyVal extends  App {
   lazy val x = {

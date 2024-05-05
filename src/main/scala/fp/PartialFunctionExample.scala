@@ -1,4 +1,4 @@
-package play_ground
+package fp
 
 // Unlike total function has as many parameters a Partial function can have
 // "only one parameter"

@@ -1,4 +1,4 @@
-package play_ground
+package fp
 
 // DREAM: use function as first class element
 // first class element is instance of classes

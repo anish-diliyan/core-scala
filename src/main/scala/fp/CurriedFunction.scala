@@ -1,4 +1,4 @@
-package play_ground
+package fp
 
 object CurriedFunction extends App {
   // Arrow is right associative: that means go from left to right

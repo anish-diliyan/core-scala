@@ -1,4 +1,4 @@
-package play_ground
+package syntaxSugar
 
 object SyntacticSugar extends App {
   class Person(val name: String, movie: String){
@@ -36,4 +36,6 @@ object SyntacticSugar extends App {
     */
    println(mary.apply())
    println(mary())
+
+   
 }

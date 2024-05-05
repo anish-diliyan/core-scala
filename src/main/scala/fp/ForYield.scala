@@ -1,5 +1,4 @@
-package play_ground
-
+package fp
 
 object ForYield extends App {
 
