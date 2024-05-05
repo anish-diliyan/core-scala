@@ -42,7 +42,7 @@ object PartialFunctionExample extends App {
   // isDefinedAt: this is very useful to figure out the PF can run with this argument or not
   println(aPartialFunction.isDefinedAt(10)) // false
 
-  // lift: Can be lifted to a total function returning options, because if a PF is not
+  // lift: Can be lifted to a total function returning containers, because if a PF is not
   // defined for given argument it will just return None
   val lifted: Int => Option[Int] = aPartialFunction.lift
   println(lifted(2)) // Some(3)

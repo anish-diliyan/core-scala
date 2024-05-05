@@ -1,4 +1,4 @@
-package options
+package containers
 
 object ExampleOne extends App {
   def getUserById(id: Int): Option[String] = {
@@ -30,4 +30,16 @@ object ExampleOne extends App {
   // fold return the output of first () if option is empty else output of second ()
   val foldResult = user.fold("Option is Empty")(x => x.toUpperCase())
   println(foldResult) // if option is empty => Option is Empty || for non empty ALICE
+
+  //collect: return Some(value) if condition matched else None
+  val collectResult = user.collect{
+    case x if x.startsWith("A") => "Start with A"
+  }
+  println(collectResult) //Some("Start with A") or None
+
+  val forYieldResult = for {
+    x <- user
+    y <- user if y startsWith "a"
+  } yield (x.toUpperCase, y.toUpperCase)
+  println(forYieldResult) // Some(ALICE)
 }

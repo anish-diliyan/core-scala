@@ -1,4 +1,4 @@
-package options
+package containers
 
 import scala.util.{Failure, Success, Try}
 
@@ -26,7 +26,7 @@ object HandlingFailures extends App {
       case _: Exception => println("Unknown exception")
     }
   }
-  // map: return output of function if success else return the result.
+  // map: return output of function if success else return the result(exception).
   val mapResult = result.map(x => x * 2)
   println(mapResult.getOrElse("Failed"))
 
@@ -39,4 +39,5 @@ object HandlingFailures extends App {
   // execute succ => s"success with $succ" "success with 5"
   val foldResult = result.fold(ex => s"failed with $ex", succ => s"success with $succ")
   println(foldResult)
+
 }

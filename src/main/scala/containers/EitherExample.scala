@@ -1,4 +1,4 @@
-package options
+package containers
 
 object EitherExample extends  App {
   def divide(a: Int, b: Int): Either[String, Int] = {
