@@ -1,6 +1,6 @@
 package oops
 
-object Overriding extends App {
+object OverridingExampleTwo extends App {
     // sealed class: restrict inheritance within this file only
     // final class: final class can not be inherited
     // final members: final members can not be override

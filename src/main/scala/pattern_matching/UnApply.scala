@@ -1,6 +1,7 @@
 package pattern_matching
 
 object UnApply extends App {
+  val c: Char = 65535
   class Person(val name: String, val age: Int)
 
   // Name this as Person recommended to keep in sync with Person (Not Mandatory)
