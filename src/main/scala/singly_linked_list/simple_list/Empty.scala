@@ -1,4 +1,6 @@
-package singly_linked_list
+package singly_linked_list.simple_list
+
+import singly_linked_list.Cons
 
 object Empty extends MyList {
 

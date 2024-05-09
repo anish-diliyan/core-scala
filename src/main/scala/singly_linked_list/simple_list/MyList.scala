@@ -1,4 +1,4 @@
-package singly_linked_list
+package singly_linked_list.simple_list
 
 abstract class MyList {
     // first element of MyList
