@@ -50,7 +50,7 @@ object sorted extends App {
 
   // other function uses with sortWith is >, <, >= , <=
   /*
-   * function inside sort with takes two params and return boolean(true/false)
+   * function inside sort will take two params and return boolean(true/false)
    * (obj1, obj2) => boolean
    * return true => if you want obj1 before obj2
    * return false => if you want other
