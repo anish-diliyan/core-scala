@@ -1,4 +1,4 @@
-package fp.udemy
+package fp.lambda
 
 object E1WhatIsFunction extends App {
 

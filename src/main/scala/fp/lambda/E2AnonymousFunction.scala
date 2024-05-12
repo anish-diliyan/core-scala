@@ -1,4 +1,4 @@
-package fp.udemy
+package fp.lambda
 
 object E2AnonymousFunction extends App {
 
@@ -13,11 +13,11 @@ object E2AnonymousFunction extends App {
   def anotherNiceDoubler: Int => Int = v1 => v1 * 2
 
   val justDoVal = () => "I am no param val"
-  println(justDoVal) // fp.udemy.E2AnonymousFunction$$$Lambda$16/0x00007752bc0269c8@45c8e616
+  println(justDoVal) // fp.lambda.E2AnonymousFunction$$$Lambda$16/0x00007752bc0269c8@45c8e616
   println(justDoVal()) // I am no param lambda
 
   def justDoDef = () => "I am no param def"
-  println(justDoDef) // fp.udemy.E2AnonymousFunction$$$Lambda$19/0x0000754cd4097530@66d33a
+  println(justDoDef) // fp.lambda.E2AnonymousFunction$$$Lambda$19/0x0000754cd4097530@66d33a
   println(justDoDef()) // I am no param def
 
   val inc = (x : Int) => x + 1
