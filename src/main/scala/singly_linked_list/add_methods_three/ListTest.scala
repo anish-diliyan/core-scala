@@ -1,4 +1,4 @@
-package singly_linked_list.add_mthods
+package singly_linked_list.add_methods_three
 
 object ListTest extends App {
   val list = Cons(1, Empty)

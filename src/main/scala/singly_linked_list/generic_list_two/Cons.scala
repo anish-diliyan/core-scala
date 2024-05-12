@@ -1,4 +1,4 @@
-package singly_linked_list.generic_list
+package singly_linked_list.generic_list_two
 
 class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
 

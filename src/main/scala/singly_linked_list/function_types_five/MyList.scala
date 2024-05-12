@@ -1,4 +1,4 @@
-package singly_linked_list.add_mthods
+package singly_linked_list.function_types_five
 
 abstract class MyList[+A] {
   def head: A
@@ -8,9 +8,9 @@ abstract class MyList[+A] {
   def printElements: String
   override def toString: String = "[ " +printElements+ " ]"
 
-  def map[B](transformer: MyTransformer[A, B]): MyList[B]
-  def flatMap[B](transformer: MyTransformer[A, MyList[B]]): MyList[B]
-  def filter(predicate: MyPredicate[A]): MyList[A]
+  def map[B](transformer: A => B): MyList[B]
+  def flatMap[B](transformer: A => MyList[B]): MyList[B]
+  def filter(predicate: A => Boolean): MyList[A]
   
   def ++[B >: A](list: MyList[B]): MyList[B]
 }

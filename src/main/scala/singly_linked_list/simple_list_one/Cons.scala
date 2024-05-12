@@ -1,6 +1,6 @@
 package singly_linked_list
 
-import singly_linked_list.simple_list.MyList
+import singly_linked_list.simple_list_one.MyList
 
 object Cons {
   def apply(h: Int, t: MyList): MyList = new Cons(h, t)

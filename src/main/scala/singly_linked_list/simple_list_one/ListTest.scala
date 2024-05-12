@@ -1,7 +1,7 @@
-package singly_linked_list.simple_list
+package singly_linked_list.simple_list_one
 
 import singly_linked_list.Cons
-import singly_linked_list.simple_list.Empty
+import singly_linked_list.simple_list_one.Empty
 
 object ListTest extends App {
   val list = Cons(1, Empty)

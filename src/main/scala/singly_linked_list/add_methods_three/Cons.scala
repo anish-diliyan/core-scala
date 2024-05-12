@@ -1,4 +1,4 @@
-package singly_linked_list.add_mthods
+package singly_linked_list.add_methods_three
 
 class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
 

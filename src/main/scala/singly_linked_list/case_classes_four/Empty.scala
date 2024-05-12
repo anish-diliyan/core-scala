@@ -1,6 +1,6 @@
-package singly_linked_list.add_mthods
+package singly_linked_list.case_classes_four
 
-object Empty extends MyList[Nothing] {
+case object Empty extends MyList[Nothing] {
 
   override def isEmpty: Boolean = true
 

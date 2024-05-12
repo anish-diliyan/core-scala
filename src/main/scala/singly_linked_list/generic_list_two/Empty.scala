@@ -1,4 +1,4 @@
-package singly_linked_list.generic_list
+package singly_linked_list.generic_list_two
 
 object Empty extends MyList[Nothing] {
 

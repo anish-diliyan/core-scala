@@ -1,4 +1,4 @@
-package singly_linked_list.simple_list
+package singly_linked_list.simple_list_one
 
 import singly_linked_list.Cons
 
